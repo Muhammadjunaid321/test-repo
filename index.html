@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js Assingment 1</h1>
+    <script>
+
+
+  //  1. Write a JavaScript function that reverse a number.
+  //   Example x = 32243;
+  //   Expected Output : 34223
+  //   Solution..........
+
+//   var string = prompt("Please enter a string");
+//   function reverse(string) {
+  
+//   var strLen = string.length;
+//   var revStr = "";
+//   for (var i = strLen - 1;i >= 0;i--) {
+//     revStr += string[i];
+//   }
+// console.log(`${string} reverse is ${revStr}`);
+//   }
+//   reverse(string);
+
+
+
+
+
+
+
+
+
+
+ // <!-- 2. Write a JavaScript function that checks whether a passed string is palindrome or not?
+    // A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam, radar or level.
+    //SOLUTION.........
+
+// var string = prompt("Please enter a string");
+// function checkPalindrome() {
+// var len = string.length;
+// var msg = "It is a Palindrome";
+// for(var i = 0; i < len/2; i++) {
+// if(string[i] != string[len - 1 - i]){
+//   msg = "It is not a Palindrome";
+// }
+// }
+// console.log(`${string}: ${msg}`);
+// }
+// checkPalindrome();
+
+
+
+
+
+
+
+
+
+
+// Write a JavaScript function that generates all combinations of a string.
+// Example string : 'dog'
+// Expected Output : d,do,dog,o,og,g
+// SOLUTION..........
+
+
+// var str = prompt("Enter any word or any number and get it's all possible combinations");
+// function combination(str) {
+//   var listOfStrings = [];
+//   for(var i = 0; i < str.length; i++){
+//     for(var j = i + 1; j < str.length + 1;j++) {
+//       listOfStrings.push(str.slice(i,j))
+//     }
+//   }return listOfStrings;
+// }console.log(combination(str));
+
+
+
+
+
+
+
+
+
+// 4. Write a JavaScript function that returns a passed string with letters in alphabetical order.
+// Example string : 'webmaster'
+// Expected Output : 'abeemrstw'
+// Assume punctuation and numbers symbols are not included in the passed string.
+// SOLUTION........
+
+// var string = prompt("Please enter a string to get it in alphabetical order");
+// function order(string) {
+// var stringArray = string.split("");
+// stringArray.sort();
+// console.log(stringArray);
+// console.log(stringArray.join(""));
+// }
+// order(str);
+
+ 
+
+
+
+
+
+
+
+
+// 5. Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the string in upper case.
+// Example string : 'the quick brown fox'
+// Expected Output : 'The Quick Brown Fox '
+//SOLUTION.........
+
+// var string = prompt("Please enter a string");
+// function myFunction(string) {
+// var first = string.charAt(0);
+// first.toUpperCase();
+// var rem = string.slice(1);
+// var caps = first.toUpperCase() + rem;
+// console.log(`${caps}`);
+// }
+// myFunction(string)
+
+
+
+
+
+
+
+
+
+
+// 6. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+// Example string : 'Web Development Tutorial';
+// Expected Output : 'Development';
+//SOLUTION.........
+
+// var string = prompt("Enter any sentence to get longest word from it");
+// function longest(str) {
+//      let array = str.split(" ");
+//     let newStr = "";
+//     for (var i = 0; i < array.length; i++) {
+//         if (array[i].length > newStr.length) {
+//             newStr = array[i];
+//         }
+//     }
+//     console.log(newStr);
+// }
+// longest(string);
+
+
+
+
+
+
+
+
+
+
+// 7. Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+// solution..........
+
+// var string = prompt("Please enter a string");
+// function vowelCount(string) {
+// var reg = /[aeiou]/gi;
+// var chars = string.match(reg);
+// console.log(chars.join(","));
+// console.log(chars.legth);
+// }
+// vowelCount(string);
+
+
+
+
+
+
+
+
+
+
+
+// 8. Write a JavaScript function that accepts a number as a parameter and check the number is prime or not.
+// Note : A prime number (or a prime) is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+// Solution.........
+
+// var number = +prompt("Enter any number to check weather it's a prime number or not");
+// function checkPrime(n) {
+//     if (n === 1) {
+//         alert("1 is not a prime number"); 
+//     }
+//     else if (n === 2) {
+//         alert("2 is a prime number");
+//     }
+//     else {
+//         for (var i = 2; i < n; i++) {
+//             if (n % i === 0) {
+//                 alert(n + " is not a prime number");
+//                 break;
+//             }
+//             else {
+//                 alert(n + " is a prime number");
+//                 break;
+//             }
+//         }
+//     }
+// }
+// checkPrime(number);
+
+
+
+
+
+
+
+
+
+
+// 10. Write a JavaScript function which will take an array of numbers stored and find the second lowest and second greatest numbers, respectively.
+// Sample array : [1,2,3,4,5]
+// Expected Output : 2,4
+// SOLUTION...........
+
+// var array = [1,2,3,4,5,6,7,8,9];
+// function myFunction(arr) {
+//     var emptyArr = [];
+//     emptyArr[0] = arr.slice(1, 2);
+//     emptyArr[1] = arr.length - 1;
+//     document.write(emptyArr);
+// }
+// myFunction(array);
+
+
+
+// // In case numbers are not in sequence
+// var array = [2,8,9,4,3,5,6,1,7,];
+// function myFunction(arr) {
+//     arr.sort();
+//     var emptyArr = [];
+//     emptyArr[0] = arr.slice(1, 2);
+//     emptyArr[1] = arr.length - 1;
+//     document.write(emptyArr);
+// }
+// myFunction(array);
+
+
+</script>
+</body>
+</html>
